@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>SKETCH-2</title>
+  </head>
+  <body>
+    <nav>
+        <a href="index.html">INDEX</a>  
+        <a href="page-1.html">SKETCH-1</a>  
+        <a href="page-2.html">SKETCH-2</a>  
+        <a href="page-3.html">SKETCH-3</a>  
+        <a href="page-4.html">Extraaaa</a> 
+    </nav>
+    <main>
+    </main>
+    <!script src="sketch.js">
+    <script>
+        var x;
+        
+        function setup() {
+            createCanvas(windowWidth, windowHeight);
+            selectAll("a")[2].addClass("aqui");
+            colorMode(HSB,366,100,100);
+            x = 0;
+        }
+        
+        function draw() {
+            resizeCanvas(windowWidth, windowHeight);
+            x++;
+            if (x>360){
+                x = 0;
+            }
+            background(x,30,100);
+            fill(0);
+            textAlign(RIGHT);
+            text("H " + Math.floor(x) + "°  S 30%  B 100%" ,windowWidth-50,windowHeight-50);
+        }
+    </script>
+  </body>
+</html>

@@ -1,2 +1,4 @@
-# Clase02
-Clase 2
+# Clase2
+ esto es más dificil de lo q pensaba
+ 
+

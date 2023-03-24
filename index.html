@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Inicio</title>
+  </head>
+  <body>
+      <nav>
+        <a href="index.html">Inicio</a>  
+        <a href="page-1.html">Trabajos</a>  
+        <a href="page-2.html">Experiencias</a>  
+        <a href="page-3.html">Más sobre mi</a> 
+        <a href="page-4.html">RRSS</a>  
+      </nav>
+      <main></main>
+      <aside>
+          <p>¡Hola! Soy <b>Antonia</b>, estudiante cuarto año. Como diseñadora, creo que es esencial estar al día en las últimas tendencias y tecnologías digitales, y eso incluye saber programar, aunque sea en un nivel básico. Y eso es exactamente lo que me trajo a este electivo, con la esperanza de aprender lo suficiente para aplicarlo en mi portafolio web.<a href="https://github.com/antoniamellado/"></a></p>
+      </aside>
+      <!script src="sketch.js">
+     <script>
+        function setup() {
+            createCanvas(windowWidth, windowHeight);
+            selectAll("a")[0].addClass("aqui");
+        }
+        
+        function draw() {
+            resizeCanvas(windowWidth, windowHeight);
+            background:#200116
+             textAlign(CENTER, CENTER);
+             textSize(50);
+            text("", mouseX, mouseY);
+        }
+      </script>
+  </body>
+</html>
