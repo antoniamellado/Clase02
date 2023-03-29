@@ -19,6 +19,7 @@ nav {
     background : rgba(255,255,255,.2);
     box-shadow : 0 2px 5px rgba(0,0,0,0.25);
     backdrop-filter : blur(10px);
+    align-items: flex-start;
 }
 
 nav a {
@@ -43,6 +44,19 @@ aside {
     width : 38vw;
 }
 
+.sliders-1{
+
+    box-shadow : 0 2px 5px rgba(0,0,0,0.25);
+    padding : 1rem;
+    border-radius : 1rem;
+    margin-top: 20em;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    text-align : center;
+
+}
 @media (orientation : portrait) {
     aside {
         width : 62vw;
